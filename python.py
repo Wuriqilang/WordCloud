@@ -1,11 +1,11 @@
-# 词云图
+﻿# 词云图
 import matplotlib.pyplot as plt
 import jieba
 from wordcloud import WordCloud
 from os import path
 localpath=path.dirname(__file__)  #获取当前工作路径
 #获取文件，注意这里要看编码格式
-text = open(localpath+r'/cd.txt','r').read()
+text = open(localpath+r'/cd.txt','r',encoding='UTF-8').read()
 #剪切单词
 text_cut=jieba.cut(text)
 #单词拼接
